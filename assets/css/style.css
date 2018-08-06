@@ -1,0 +1,195 @@
+body {
+    background-image: url("../images/full-bloom.png");
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+header {
+    background-color: white;
+    border-bottom: 2px solid #cccccc; 
+}
+.textwrap {
+    float: left;
+    margin: 21.44px 21.44px 0px 0px;
+}
+
+#contentArea {
+    width: 918px;
+    background-color: white;
+    color: #777777;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 21.40px 0px 21.4px;
+    margin-top: 40px;
+    margin-bottom: 120px;
+    border: 1px solid lightgray;
+    line-height: 2;
+}
+
+#contentHeader {
+    position: relative;
+    width: 960px;
+    margin: auto;
+    border: 0px;
+    background-color: white;  
+}
+
+.contentHeading {
+    margin-bottom:0px;
+    padding-bottom:19.40px;
+    border-bottom: 2px solid #dddddd;
+    color: #4aaaa5;
+}
+
+#navigationLinks {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:0px;
+
+}
+
+#nameSpace {
+    width: 242.80px;
+    float: left;
+    background-color: #4aaaa5;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    width: 90px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0px;
+    color:#666666;
+    line-height:2;
+}
+li a:link {
+    color: #666666;
+}
+li a:visited {
+    color:#666666;
+}
+li a:hover {
+    background-color: #cccccc;
+    color: whitesmoke;
+}
+
+li {
+    float: left;
+}
+
+h1,h2,h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size:20px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+#yourNameHere {
+    color:white;
+}
+.nav {
+    border-right: 1px solid lightgray;
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    height: 75px;
+    background-color: #666666;
+    border-top: 5px solid #4aaaa5;
+
+}
+
+#license {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+}
+
+.contactMessage {
+    height: 300px;
+    resize:none;
+}
+
+form {
+    margin-top: 21.44px;
+    margin-bottom: 21.44px;
+}
+
+button {
+    color:white;
+    background-color: #4aaaa5;
+    border:none;
+    padding: 10px 20px;
+}
+
+.portHolder {
+    float:left;
+    position:relative;
+    margin: 40px 20px 0px 0px;
+    padding: 0px;
+    height: 300px;
+}
+
+.portItem {
+    width: 300px;
+    height: 300px;
+    padding:0px;
+    margin: 0px;
+}
+
+.portLabel {
+    position:absolute;
+    text-align:center;
+    display:block;
+    background-color: #4aaaa5;
+    color: white;
+    bottom:10px;
+    width: 100%;
+    line-height: 1;
+    padding: 20px 0px 20px 0px;
+    margin:0px;
+}
+
+input {
+    padding: 12px 20px;
+    width: 878px;
+    border: 1px solid #cccccc;
+}
+
+textarea {
+    padding: 12px 20px;
+    width: 878px;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 1px solid #cccccc;
+}
+form {
+    position:relative;
+}
