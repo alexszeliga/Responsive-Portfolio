@@ -10,7 +10,7 @@
 
 <body>
     <!-- The header is styled to be the full width of the page. a div holds the conent at the correct width. A few divs hold the header elements; -->
-    <header class="clearfix">
+    <div class="header clearfix">
         <!-- The contentHeader div bounds the width of the content in the header  -->
         <div id="contentHeader">
             <div id="nameSpace">
@@ -26,18 +26,22 @@
                 <li class="nav">
                     <a href="portfolio.html">Portfolio</a>
                 </li>
-                <li class="navLast">
+                <!-- nav class only adds seperator, so is not needed for last item in nav -->
+                <li>
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
-    </header>
+    </div>
     <!-- the context here might be a little backwards; there's a content area section, because semantically sections come before divs, but I think 
     I might have been better off making a div for the content area, then split that up into sections-->
+    <section class="contentBox">
     <section id="contentArea">
         <h3 class="contentHeading">About Me</h3>
         <div id="contentContent">
-            <img src="assets/images/alex_szeliga_headshot.jpg" width=200 class="textwrap" alt="Headshot of Alex Szeliga">
+            <div class="imageBox">
+                <img src="assets/images/alex_szeliga_headshot.jpg" width=200 class="textwrap" alt="Headshot of Alex Szeliga">
+            </div>
             <p>
                 By the time I completed high school, I felt very confident that the most exciting (and likely most lucrative) careers available
                 to my cohort were in technology and computer science. Upon graduating, I had convinced myself that traditional
@@ -103,6 +107,7 @@
                 ‘bootcamp’, and now I’m poised to add some new tools to my kit and build the next big idea.
             </p>
         </div>
+    </section>
     </section>
     <!-- just putting a (c) on a document doesn't exactly mean much, but I firmly believe in creative commons -->
     <footer>

@@ -6,17 +6,20 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
 }
-header {
+.header {
     background-color: white;
     border-bottom: 2px solid #cccccc; 
 }
 .textwrap {
     float: left;
-    margin: 21.44px 21.44px 0px 0px;
+    margin: 20px 20px 0px 20px;
 }
 
+.imageBox {
+    padding: 0px;
+}
 #contentArea {
-    width: 918px;
+    width: 815px;
     background-color: white;
     color: #777777;
     margin-left: auto;
@@ -26,6 +29,7 @@ header {
     margin-bottom: 120px;
     border: 1px solid lightgray;
     line-height: 2;
+    float: left;
 }
 
 #contentHeader {
@@ -36,8 +40,15 @@ header {
     background-color: white;  
 }
 
+.contentBox {
+    position: relative;
+    width: 960px;
+    margin: auto;
+    border: 0px;
+}
+
 .contentHeading {
-    margin-bottom:0px;
+    margin:28px 20px 0px 20px;
     padding-bottom:19.40px;
     border-bottom: 2px solid #dddddd;
     color: #4aaaa5;
@@ -48,6 +59,7 @@ header {
     right:0px;
     top:30px;
     height:100%;
+    margin: 0px auto;
 }
 
 #nameSpace {
@@ -152,7 +164,7 @@ button {
 .portHolder {
     float:left;
     position:relative;
-    margin: 40px 20px 0px 0px;
+    margin: 20px 20px;
     padding: 0px;
     height: 300px;
 }
@@ -193,33 +205,86 @@ form {
     position:relative;
 }
 
-@media only screen and (max-width: 640px) {
-    #nameSpace {
+p {
+    margin: 16px 20px;
+}
+
+@media only screen and (max-width: 980px) {
+    #contentArea {
+        width:80%;
+        float:none;
+        padding:0px;
+    }
+
+    .header {
         width:100%;
     }
+
     #contentHeader {
+        width:80%;
+    }
+
+
+    .contentBox {
         width:100%;
     }
-
-    #navigationLinks {
-        position:relative;
-        top:0px;
-    }
-
-
-
-
-
-
-
 }
 
 @media only screen and (max-width: 768px) {
 
 }
 
-@media only screen and (max-width: 980px) {
-    #contentArea {
-        width:80%;
+@media only screen and (max-width: 640px) {
+    #nameSpace {
+        width:100%;
     }
+    #contentHeader {
+        width:100%;
+        margin: 0px;
+        position: relative;
+    }
+
+
+
+    #navigationLinks {
+        position:relative;
+        top:0px;
+        text-align:center;
+    }
+
+    ul {
+        display:inline-block;
+        height: 28px;
+    }
+    header {
+        text-align:center;
+    }
+
+    .textwrap {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .portHolder {
+        width:100%;
+        height: auto;
+        margin: 0px;
+    }
+
+    .portItem {
+        width:100%;
+        height: auto;
+    }
+
+    .portLabel {
+        margin-bottom: 30px;
+    }
+    .imageBox {
+        padding:20px;
+    }
+
+    .portBox {
+        margin:20px;
+    }
+
 }
