@@ -5,30 +5,31 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <!-- The header is styled to be the full width of the page. a div holds the conent at the correct width. A few divs hold the header elements; -->
-    <header>
+    <header class="clearfix">
         <!-- The contentHeader div bounds the width of the content in the header  -->
-        <div class="clearfix" id="contentHeader">
+        <div id="contentHeader">
             <div id="nameSpace">
                 <h3 id="yourNameHere">Alex Szeliga</h3>
             </div>
             <!-- div is positioned absolute, not floated right, links have a hover jawn on them -->
-            <div id="navigationLinks">
-                <ul>
-                    <li class="nav">
-                        <a href="index.html">About Me</a>
-                    </li>
-                    <li class="nav">
-                        <a href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="navLast">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        </div>
+        <div id="navigationLinks">
+            <ul>
+                <li class="nav">
+                    <a href="index.html">About Me</a>
+                </li>
+                <li class="nav">
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="navLast">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
     </header>
     <!-- the context here might be a little backwards; there's a content area section, because semantically sections come before divs, but I think 
