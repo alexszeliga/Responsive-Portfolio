@@ -19,12 +19,12 @@ body {
     padding: 0px;
 }
 #contentArea {
-    width: 815px;
+    width: 813px;
     background-color: white;
     color: #777777;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px 21.40px 0px 21.4px;
+    padding: 0px;
     margin-top: 40px;
     margin-bottom: 120px;
     border: 1px solid lightgray;
@@ -32,6 +32,9 @@ body {
     float: left;
 }
 
+    .portBox {
+        margin:20px;
+    }
 #contentHeader {
     position: relative;
     width: 960px;
@@ -150,8 +153,7 @@ footer {
 }
 
 form {
-    margin-top: 21.44px;
-    margin-bottom: 21.44px;
+    margin: 20px;
 }
 
 button {
@@ -164,18 +166,26 @@ button {
 .portHolder {
     float:left;
     position:relative;
-    margin: 20px 20px;
     padding: 0px;
-    height: 300px;
+    height: auto;
+    margin: 0px 20px
 }
 
 .portItem {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     padding:0px;
     margin: 0px;
+    overflow: hidden;
 }
 
+.fl {
+    float:left;
+}
+
+.fr {
+    float:right;
+}
 .portLabel {
     position:absolute;
     text-align:center;
@@ -184,20 +194,24 @@ button {
     color: white;
     bottom:10px;
     width: 100%;
-    line-height: 1;
-    padding: 20px 0px 20px 0px;
-    margin:0px;
+    line-height: 3;
+    margin:0px 0px 30px 0px;
 }
 
 input {
-    padding: 12px 20px;
-    width: 878px;
+
+    width: 100%;
+    line-height: 2.3;
     border: 1px solid #cccccc;
+    padding-left:7px;
+}
+
+.portPair {
+    width:100%;
 }
 
 textarea {
-    padding: 12px 20px;
-    width: 878px;
+    width: 100%;
     font-family:Arial, Helvetica, sans-serif;
     border: 1px solid #cccccc;
 }
@@ -269,22 +283,18 @@ p {
         width:100%;
         height: auto;
         margin: 0px;
+        max-width: none;
     }
 
     .portItem {
-        width:100%;
+        width: 100%;
         height: auto;
     }
 
-    .portLabel {
-        margin-bottom: 30px;
-    }
     .imageBox {
         padding:20px;
     }
 
-    .portBox {
-        margin:20px;
-    }
+
 
 }
